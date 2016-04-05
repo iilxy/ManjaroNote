@@ -1,6 +1,6 @@
 #Update the Mirrorlist:
-sudo pacman-mirrors -g
-sudo pacman-mirrors -i -c all (interactive Mode)
+>sudo pacman-mirrors -g
+>sudo pacman-mirrors -i -c all (*interactive Mode)
 
 #Pacman:
 1.Updating the System
