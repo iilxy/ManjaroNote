@@ -1,8 +1,10 @@
 #Update the Mirrorlist:
 >sudo pacman-mirrors -g
+
 >sudo pacman-mirrors -i -c all     *(interactive Mode)*
 
-- - -
+_ _ _
+
 
 #Pacman:
 ##1.Updating the System
@@ -10,6 +12,7 @@
 
 ##2.Synchronising with the Manjaro Repositories
 >sudo pacman -Syy
+
 >sudo pacman -Syyu   *(simultaneously)*
 
 ##3.Searching for Software Packages
@@ -18,13 +21,17 @@
 
 ####Searching Your System:
 >pacman -Qs [*software package name*]
+
 >pacman -Qi [*software package name*]
+
 >pacman -Qii [*software package name*]
+
 >pacman -Ql
 
 ##4.Downloading and Installing Software Packages
 ####Packages from the Manjaro Repositories:
 >sudo pacman -S [*software package name*]
+
 >sudo pacman -Sw [*software package name*] *(without actually installing)*
 
 ####Packages from the AUR (Arch User Repository):
@@ -32,6 +39,7 @@
 
 ####Packages Located Locally or From the Internet:
 >sudo pacman -U *[/package_path/][software package name.pkg.tar.xz]*
+
 >sudo pacman -U *~/Downloads/[software package name.pkg.tar.xz]*
 
 ##5.Removing Applications and Software Packages
@@ -39,10 +47,12 @@
 
 ##6.Cleaning the Cache
 >sudo pacman -Sc    *(To clear the cache of downloads that have already been installed)*
+
 >sudo pacman -Scc   *(to clear the cache completely)*
 
 
-- - -
+_ _ _
+
 
 
 #Accessing the AUR:
@@ -50,18 +60,22 @@
 
 ##Searching for and Installing Software From the AUR:
 >yaourt [software package name]
+
 >yaourt -S [software package name]
 
 ##Upgrading the packages installed from the AUR:
 >yaourt -Syua
 
 
-- - -
+_ _ _
+
 
 
 #Install NVIDIA Drivers:
 >sudo mhwd -a pci nonfree 0300
+
 >sudo reboot
+
 >mhwd -li
 
 ##Configure The Resolution/Refresh Rate:
@@ -77,14 +91,17 @@
 
 
 
-- - -
+_ _ _
+
 
 
 
 #Bumblebee and Steam:
 ##1. Install bumblebee for nonfree nvidia. Please run in terminal command in proper order:
 >sudo pacman -S virtualgl lib32-virtualgl lib32-primus primus
+
 >sudo mhwd -f -i pci video-hybrid-intel-nvidia-bumblebee
+
 >sudo systemctl enable bumblebeed
 
 ##2. Reboot system:
@@ -110,7 +127,8 @@ Select a game - that you want to run using your discrete Nvidia card - from the 
 
 ##lspci | grep VGA
 
-- - -
+_ _ _
+
 
 #Install Vmware on Archlinux:
 ##For the System service scripts directory, use /etc/init.d (the default).
@@ -119,7 +137,8 @@ Select a game - that you want to run using your discrete Nvidia card - from the 
 ##To (re)build the modules from terminal later on, use:
 >vmware-modconfig --console --install-all
 
-- - -
+_ _ _
+
 
 #Install rEFInd:
 ##install using pacman(preferred)
