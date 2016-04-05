@@ -1,8 +1,8 @@
-Running the pacman-mirrors -g Command to Update the Mirrorlist:
+#Update the Mirrorlist:
 sudo pacman-mirrors -g
 sudo pacman-mirrors -i -c all (interactive Mode)
 
-Pacman:
+#Pacman:
 1.Updating the System
 sudo pacman -Syu
 
@@ -41,7 +41,7 @@ sudo pacman -Scc (to clear the cache completely)
 
 
 
-Accessing the AUR:
+#Accessing the AUR:
 sudo pacman -S base-devel yaourt
 
 Searching for and Installing Software From the AUR:
@@ -53,7 +53,7 @@ yaourt -Syua
 
 
 
-Install NVIDIA Drivers:
+#Install NVIDIA Drivers:
 sudo mhwd -a pci nonfree 0300
 sudo reboot
 mhwd -li
@@ -70,7 +70,7 @@ sudo mhwd-gpu --setgl nvidia --setxorg /etc/X11/mhwd.d/nvidia.conf
 
 
 
-Bumblebee and Steam:
+#Bumblebee and Steam:
 1. Install bumblebee for nonfree nvidia. Please run in terminal command in proper order:
 sudo pacman -S virtualgl lib32-virtualgl lib32-primus primus
 sudo mhwd -f -i pci video-hybrid-intel-nvidia-bumblebee
@@ -89,10 +89,9 @@ primusrun steam
 5b. Alternatively, you can run specific games by:
 Select a game - that you want to run using your discrete Nvidia card - from the Library page of the Steam client, right-click, and select Properties. Click the SET LAUNCH OPTIONS... button and specify primusrun %command% for the command line. Save your changes.This method allows you to pick when the discrete NVidia GPU should be used on a per-game basis.
 
-
 lspci | grep VGA
 
-Install Vmware on Archlinux:
+#Install Vmware on Archlinux:
 For the System service scripts directory, use /etc/init.d (the default).
 To (re)build the modules from terminal later on, use:
-# vmware-modconfig --console --install-all
+vmware-modconfig --console --install-all
