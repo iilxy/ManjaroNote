@@ -1,14 +1,16 @@
 #Update the Mirrorlist:
 >sudo pacman-mirrors -g
->sudo pacman-mirrors -i -c all (*interactive Mode)
+
+>sudo pacman-mirrors -i -c all     *(interactive Mode)*
 
 #Pacman:
-1.Updating the System
-sudo pacman -Syu
+##1.Updating the System
+>sudo pacman -Syu
 
-2.Synchronising with the Manjaro Repositories
-sudo pacman -Syy
-sudo pacman -Syyu (simultaneously)
+##2.Synchronising with the Manjaro Repositories
+>sudo pacman -Syy
+
+>sudo pacman -Syyu (simultaneously)
 
 3.Searching for Software Packages
 Searching the Manjaro Repositories:
