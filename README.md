@@ -66,6 +66,17 @@ _ _ _
 ##Upgrading the packages installed from the AUR:
 >yaourt -Syua
 
+##Using proxy
+>export http_proxy=127.0.0.1:8087
+>export https_proxy=127.0.0.1:8087
+or
+>export http_proxy=http://127.0.0.1:8087/
+>export https_proxy=$http_proxy
+>export HTTP_PROXY=$http_proxy
+>export HTTPS_PROXY=$HTTP_PROXY
+then
+>ln -s /home/lsc/MyProject/XX-Net/data/gae_proxy/CA.crt  /etc/ca-certificates/trust-source/anchors/GoAgent.crt
+>trust extract-compat
 
 _ _ _
 
